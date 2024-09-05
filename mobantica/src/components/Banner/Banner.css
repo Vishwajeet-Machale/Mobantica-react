@@ -1,0 +1,99 @@
+/* Banner Container */
+.banner-container {
+    padding: 0;
+    max-width: 97vw;
+    border-bottom: 1px solid gray;
+  }
+  
+  /* Text Section */
+  .text-section {
+    background-color: #f8f9fa;
+    align-items: end;
+  }
+  
+  /* Headings */
+  .text-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+  }
+  
+  .text-content p {
+    font-size: 1.4rem;
+  }
+  
+  /* Image Section */
+  .image-section {
+    padding: 0;
+  }
+  
+  /* Banner Image */
+  .banner-image {
+    width: 100%;
+    height: 85vh;
+    padding-bottom: 40px;
+    object-fit: cover;
+  }
+  
+  /* Buttons */
+  .button-consultation,
+  .button-team {
+    background-color: #010ED0;
+    color: #ffffff;
+    border: none;
+    position: relative;
+    padding: 10px 20px;
+    font-size: 1rem;
+    display: inline-block;
+    cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  
+  .button-team {
+    background-color: #DEE0FF;
+    color: #010ED0;
+  }
+  
+  .button-consultation::after,
+  .button-team::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: currentColor;
+    left: 0;
+    bottom: 6px; /* Adjust this to bring the underline closer to the text */
+    transition: width 0.5s ease;
+  }
+  
+  .button-consultation:hover::after,
+  .button-team:hover::after {
+    width: 100%;
+  }
+  
+  .button-consultation:hover,
+  .button-team:hover {
+    text-decoration: none;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 768px) {
+    .text-section, .image-section {
+      text-align: center;
+      padding: 20px;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .banner-image {
+      clip-path: polygon(
+        30% 0%,
+        100% 0%,
+        100% 100%,
+        0% 100%,
+        30% 40%
+      );
+    }
+  }
+  

@@ -1,0 +1,17 @@
+
+.choose-us-img{
+    width: 70px;
+    height: 70px;
+}
+
+.title{
+   font-size: 1.3rem;
+   text-wrap: nowrap;
+   font-weight: 600;
+   color: #1017b8;
+   
+}
+
+.choose-us{
+    max-width: 95vw;
+}

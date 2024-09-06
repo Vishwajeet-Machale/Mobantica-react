@@ -1,0 +1,34 @@
+.WhatWeDo{
+    background-color:rgb(196, 195, 226);
+}
+
+.image-section{
+        width: 150%;
+        height: 85vh;
+        padding-bottom: 40px;
+        object-fit: cover;
+}
+
+.marquee-container {
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  
+  .marquee-content {
+    display: flex;
+    animation: marquee 15s linear infinite;
+  }
+  
+  .marquee-content img {
+    height: 200px;
+  }
+  
+  @keyframes marquee {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  

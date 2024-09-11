@@ -1,10 +1,7 @@
-
 import React, { useState, useEffect } from 'react';
 import { Navbar, Nav, Container, Button, NavDropdown } from 'react-bootstrap';
 import { assets } from '../../assets/assets';
-import './Header.css'
-
-
+import './Header.css';
 
 function Header() {
 
@@ -31,7 +28,8 @@ function Header() {
   }, [lastScrollTop]);
 
   return (
-    <Navbar bg="transparent" expand="lg" className="py-3, header"  style={{ borderBottom: '1px solid grey',  }} >
+    <Navbar bg="transparent" expand="lg" className={`py-3 header ${show ? 'd-flex' : 'd-none'}`} style={{ borderBottom: '1px solid grey' }}>
+      <Container fluid>
         {/* Logo */}
         <Navbar.Brand href="#">
           <img src={assets.logo} alt="Logo" style={{ height: 35 }} />
@@ -42,7 +40,7 @@ function Header() {
 
         {/* Navigation Links */}
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="mx-auto">
+          <Nav className="mx-auto text-center">
             <Nav.Link href="#home" className="mx-2">Home</Nav.Link>
             <Nav.Link href="#about" className="mx-2">About us</Nav.Link>
             <NavDropdown title="Services" id="services-dropdown" className="mx-2">
@@ -50,7 +48,7 @@ function Header() {
               <NavDropdown.Item href="#mobile-development">Mobile Development</NavDropdown.Item>
               <NavDropdown.Item href="#ui-ux-design">UI/UX Design</NavDropdown.Item>
               <NavDropdown.Item href="#digital-marketing">Digital Marketing</NavDropdown.Item>
-            </NavDropdown>          
+            </NavDropdown>
             <NavDropdown title="Hire Developer" id="hire-developer-dropdown" className="mx-2">
               <NavDropdown.Item href="#frontend-developer">Frontend Developer</NavDropdown.Item>
               <NavDropdown.Item href="#backend-developer">Backend Developer</NavDropdown.Item>
@@ -63,11 +61,12 @@ function Header() {
           </Nav>
 
           {/* Contact Info */}
-          <div className="d-flex align-items-center">
+          <div className="d-flex align-items-center mt-3 mt-lg-0">
             <span className="me-3">+123-456-7890</span>
-            <Button style={{backgroundColor:'#010ED0', borderRadius:'5px', padding:'6px 20px'}}>Contact Us</Button>
+            <Button style={{ backgroundColor: '#010ED0', borderRadius: '5px', padding: '6px 20px' }}>Contact Us</Button>
           </div>
         </Navbar.Collapse>
+      </Container>
     </Navbar>
   );
 }

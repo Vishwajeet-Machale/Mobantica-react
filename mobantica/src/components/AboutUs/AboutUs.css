@@ -1,14 +1,54 @@
-.About-us{
+.About-us {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 5px;
+    gap: 20px; /* Increased gap for better spacing */
     justify-content: center;
     text-align: center;
-    margin-top: 40px;
-    margin-bottom: 40px;
-}
-
-.About-us p{
-    max-width: 50%;
-}
+    margin: 40px 20px; /* Added horizontal margin for smaller screens */
+  }
+  
+  .About-us h1 {
+    font-size: 2rem; /* Adjust font size for better readability on smaller screens */
+  }
+  
+  .About-us p {
+    max-width: 80%; /* Increased max-width for smaller screens */
+    font-size: 1rem; /* Adjusted font size for readability */
+  }
+  
+  .About-us Button {
+    background-color: #010ED0;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .About-us Button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 768px) {
+    .About-us {
+      margin: 20px 10px; /* Reduced margins on smaller screens */
+    }
+  
+    .About-us h1 {
+      font-size: 1.5rem; /* Smaller font size for headings */
+    }
+  
+    .About-us p {
+      max-width: 90%; /* Further increased max-width on very small screens */
+      font-size: 0.9rem; /* Slightly smaller font size */
+    }
+  
+    .About-us Button {
+      padding: 8px 16px; /* Adjusted padding for smaller buttons */
+      font-size: 0.9rem; /* Slightly smaller font size */
+    }
+  }
+  

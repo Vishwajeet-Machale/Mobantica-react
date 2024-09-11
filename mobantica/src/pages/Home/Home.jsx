@@ -91,7 +91,7 @@ const Home = () => {
       <AboutUs />
       <TrackRecord />
       <ChooseUs />
-      <div className='WhatWeDo mt-5 mb-5 row' >
+      {/* <div className='WhatWeDo mt-5 mb-5 row' >
       <h3 className='p-5 fw-bold text-center'>What we do ?</h3>
       <div className='d-flex container ms-1 row'>
          {whatWeDo.map((item)=>(
@@ -108,7 +108,7 @@ const Home = () => {
       <Button>Know more</Button>
       </div>     
       <div className='d-flex col-md-6 ms-1 row'>
-         <img src='https://mobantica.com/wp-content/uploads/2023/03/mapbox-ZT5v0puBjZI-unsplash.jpg' className='image-section'  alt="" />
+         <img src='https://mobantica.com/wp-content/uploads/2023/03/mapbox-ZT5v0puBjZI-unsplash.jpg' className='home-image-section'  alt="" />
       </div>
       </div>
       <div className='d-flex mt-5 mb-5 row'>
@@ -127,7 +127,7 @@ const Home = () => {
 <div className=' mt-5 mb-5 row'>
   <h1 className='text-center' >Solving IT challenges in every industry, every day.</h1>
   
-</div>
+</div> */}
     </div>
   )
 }

@@ -1,0 +1,23 @@
+.image-card{
+    position: relative;
+    border: 1px solid white;
+    border-radius:30px;
+    background-color:  rgb(242, 242, 250);
+    white-space: nowrap;
+    
+  }
+  .company-img{
+   
+    width: 90px;
+    height: auto;
+    object-fit: cover;
+    border: 1px solid white;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  
+   .company-img:hover {
+    transform: translateY(-10px);
+  }
+  

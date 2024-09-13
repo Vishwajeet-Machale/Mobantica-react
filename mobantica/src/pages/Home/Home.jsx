@@ -47,15 +47,15 @@ const Home = () => {
     },
   ];
 
-  const clientLogos = [
-    "https://mobantica.com/wp-content/uploads/2024/01/RENTPRO-1-150x150.jpg",
-    "https://mobantica.com/wp-content/uploads/2024/01/funex-150x150.jpg",
-    "https://mobantica.com/wp-content/uploads/2024/01/pg-150x150.jpg",
-    "https://mobantica.com/wp-content/uploads/2024/01/RENTPRO-150x150.jpg",
-    "https://mobantica.com/wp-content/uploads/2024/01/5dsolutions-150x150.jpg",
-    "https://mobantica.com/wp-content/uploads/2024/01/jash-150x150.jpg",
-    "https://mobantica.com/wp-content/uploads/2024/01/techbulls-150x150.jpg",
-  ];
+  // const clientLogos = [
+  //   "https://mobantica.com/wp-content/uploads/2024/01/RENTPRO-1-150x150.jpg",
+  //   "https://mobantica.com/wp-content/uploads/2024/01/funex-150x150.jpg",
+  //   "https://mobantica.com/wp-content/uploads/2024/01/pg-150x150.jpg",
+  //   "https://mobantica.com/wp-content/uploads/2024/01/RENTPRO-150x150.jpg",
+  //   "https://mobantica.com/wp-content/uploads/2024/01/5dsolutions-150x150.jpg",
+  //   "https://mobantica.com/wp-content/uploads/2024/01/jash-150x150.jpg",
+  //   "https://mobantica.com/wp-content/uploads/2024/01/techbulls-150x150.jpg",
+  // ];
 
  
   return (

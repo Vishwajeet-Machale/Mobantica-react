@@ -1,0 +1,13 @@
+.Contact-us-top-section {
+    background: linear-gradient(to bottom, white 50%, #e9e6ef 0%, #afc6e6 100%);
+    padding: 20px 0; /* Adjust padding as needed */
+}
+
+.address-section p{
+   font-size: 13px;
+}
+
+.benefits-list{
+  font-size: 10px;
+  margin-bottom: 5px;
+}

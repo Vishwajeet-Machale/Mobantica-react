@@ -1,5 +1,27 @@
-.group-images{
-    width:250px;
+.better-together-container {
+    padding: 20px;
+  }
+  
+  .get-in-touch-btn {
+    background-color: #010EDO;
+    color: #fff;
+    border: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .get-in-touch-btn:hover {
+    background-color: #004bb5;
+  }
+  
+  .group-images {
+    width: 100%;
     height: auto;
     object-fit: cover;
-}
+  }
+  
+  @media (max-width: 576px) {
+    .group-images {
+      margin-bottom: 15px;
+    }
+  }
+  

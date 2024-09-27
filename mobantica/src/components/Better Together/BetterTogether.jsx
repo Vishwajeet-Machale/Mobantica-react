@@ -2,16 +2,32 @@ import React from 'react'
 import { Button, Col, Container, Row } from 'react-bootstrap'
 import './BetterTogether.css'
 
+
 const BetterTogether = () => {
 
     const images = [
-        'http://localhost:5174/src/assets/banner.png',
-        'http://localhost:5174/src/assets/banner.png',
-        'http://localhost:5174/src/assets/banner.png',
-        'http://localhost:5174/src/assets/banner.png',
-        'http://localhost:5174/src/assets/banner.png',
-        'http://localhost:5174/src/assets/banner.png'
+      {
+         img :"https://mobantica.com/wp-content/uploads/2024/02/mobileappMobantica.webp"
+      },
+      {
+         img :"https://mobantica.com/wp-content/uploads/2024/02/mobileappMobantica.webp"
+      },
+      {
+         img :"https://mobantica.com/wp-content/uploads/2024/02/mobileappMobantica.webp"
+      },
+      {
+         img :"https://mobantica.com/wp-content/uploads/2024/02/mobileappMobantica.webp"
+      },
+      {
+         img :"https://mobantica.com/wp-content/uploads/2024/02/mobileappMobantica.webp"
+      },
+      {
+         img :"https://mobantica.com/wp-content/uploads/2024/02/mobileappMobantica.webp"
+      }
+     
     ]
+
+
   return (
     <Container fluid>
        <Row className='d-flex mb-4'>
@@ -24,9 +40,9 @@ const BetterTogether = () => {
           </Col>
           <Col md={8} xs={6}>
              <Row>
-                {images.map((image)=>(
+                {images.map((item)=>(
                     <Col md={4} xs={12} sm={6} className='pb-1'>
-                        <img src={image} alt="" className='group-images'  />
+                        <img src={item.img}  className="group-images" />
                     </Col>
                 ))}
              </Row>

@@ -27,6 +27,7 @@ const JoinMobantica = () => {
         ))}
       </div>
     </div>
+
   </Container>
   )
 }

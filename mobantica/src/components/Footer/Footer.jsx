@@ -3,6 +3,7 @@ import { Container, Row, Col, Button } from 'react-bootstrap';
 import { FaFacebookF, FaLinkedinIn, FaInstagram } from 'react-icons/fa';
 import './Footer.css';
 import { assets } from '../../assets/assets';
+import ChatBot from '../ChatBot/ChatBot';
 
 const list = {
   Company: ["Home", "About us", "Blog", "Contact"],
@@ -48,6 +49,7 @@ const Footer = () => {
             </a>
           </Col>
         </Row>
+        <ChatBot />
       </Container>
     </>
   )

@@ -7,7 +7,7 @@ import ContactForm from '../../components/ContactForm/ContactForm';
 
 const ContactUs = () => {
 
-  const list = ["Client Oriented", "Result-driven", "Independent", "Problem-solving", "Competent", "Transperent"]
+const list = ["Client Oriented", "Result-driven", "Independent", "Problem-solving", "Competent", "Transperent"]
 
   return (
     <>
